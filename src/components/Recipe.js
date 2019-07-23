@@ -16,7 +16,7 @@ export default function Recipe({ title, calories, image, ingredients }) {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="imgs">
           <p>Calories: {Clrs}</p>
           <img src={image} alt="" />
         </div>

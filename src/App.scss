@@ -51,6 +51,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 96%;
+    height: 100%;
     margin: 0 auto;
   }
 
@@ -91,8 +92,13 @@
   }
 
   li {
+    overflow: hidden;
     list-style-type: circle !important;
     text-align: left;
+  }
+
+  .imgs {
+    bottom: 0;
   }
 }
 
