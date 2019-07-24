@@ -1,7 +1,7 @@
 Here were used Bootstrap and sass: 
 npm install --save bootstrap
 npm install node-sass --save
-
+Recipe Search API from https://www.edamam.com/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
