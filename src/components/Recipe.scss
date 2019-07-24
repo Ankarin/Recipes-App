@@ -1,0 +1,126 @@
+.recipe-form {
+  background: white;
+
+  .toggler {
+    margin-bottom: -3px;
+    background: #DE6262;
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+
+    transition: 0.2s;
+
+    &:hover {
+      color: white;
+      background: #FC354C;
+      background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+      background: linear-gradient(to right, #0ABFBC, #FC354C);
+
+    }
+
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .fas {
+      margin-bottom: -7px;
+
+      padding: 0 10px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 96%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .ingreds {
+    font-size: 18px;
+
+
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #DE6262;
+    background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+    background: linear-gradient(to right, #FFB88C, #DE6262);
+
+    li {
+      margin: 10px;
+    }
+
+    border-radius: 0 0 5px 5px;
+  }
+
+  h2 {
+    overflow: hidden;
+  }
+
+  box-shadow: 2px 2px gray;
+
+
+
+
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px;
+
+  width: 1fr;
+
+  ul {
+    list-style-type: circle !important;
+  }
+
+  p {
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  li {
+    overflow: hidden;
+    list-style-type: circle !important;
+    text-align: left;
+  }
+
+  .imgs {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .recipes {
+
+    grid-template-columns: 1fr !important;
+
+  }
+
+}
+
+// show toggler
+.ingreds {
+
+  li {
+    display: none;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+// 

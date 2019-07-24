@@ -20,6 +20,7 @@ export default function App() {
     );
     const data = await response.json();
     setRecipes(data.hits);
+    console.log(data);
   };
 
   const updateSearch = e => {

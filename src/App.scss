@@ -13,12 +13,13 @@
   width: 100vw;
   top: 0;
   color: black;
-  background: #abbaab;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffffff, #abbaab);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #DE6262;
+
+  background: -webkit-linear-gradient(to right, #FFB88C, #DE6262);
+
+  background: linear-gradient(to right, #FFB88C, #DE6262);
+
+
 
 
   height: 100vh;
@@ -41,72 +42,4 @@
 .conteiner {
   max-width: 1500px;
   margin: 0 auto;
-}
-
-.recipe-form {
-  background: white;
-
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 96%;
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .ingreds {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  h2 {
-    overflow: hidden;
-  }
-
-  box-shadow: 2px 2px gray;
-
-
-
-
-  margin-top: 20px;
-  border-radius: 5px;
-  padding: 10px;
-
-  width: 1fr;
-
-  ul {
-    list-style-type: circle !important;
-  }
-
-  p {
-    text-align: center !important;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: left;
-  }
-
-  li {
-    overflow: hidden;
-    list-style-type: circle !important;
-    text-align: left;
-  }
-
-  .imgs {
-    bottom: 0;
-  }
-}
-
-@media screen and (max-width:960px) {
-  .recipes {
-
-    grid-template-columns: 1fr !important;
-
-  }
-
 }
