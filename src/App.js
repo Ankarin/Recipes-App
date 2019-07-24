@@ -14,13 +14,22 @@ export default function App() {
     getRecipes();
   }, [query]);
 
+  // Show 'this dish does not exist' if have benen typed wrong name
+
+  //
+  const [message, setMessage] = useState('');
   const getRecipes = async () => {
     const response = await fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     );
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data);
+
+    if (data.hits.length == 0) {
+      setMessage('Sorry, this dish does not exist (');
+    } else {
+      setMessage('');
+    }
   };
 
   const updateSearch = e => {
@@ -44,7 +53,7 @@ export default function App() {
             type="text"
             value={search}
             onChange={updateSearch}
-            placeholder="Type the dish you want"
+            placeholder="Type the dish you want (English)"
           />
           <button
             className="search-button btn btn-dark btn-md  col-sm-3"
@@ -52,7 +61,9 @@ export default function App() {
           >
             Search
           </button>
+          <h1 className="alertMessage">{message}</h1>
         </form>
+
         <div className="recipes">
           {recipes.map(recipe => (
             <Recipe
